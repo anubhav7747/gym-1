@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anubhav Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Mochiy+Pop+P+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Css Reset */
+        body {
+            font-family: 'Baloo Bhaina 2', cursive;
+            /* color: white; */
+            margin: 0px;
+            padding: 0px;
+            /* for image */
+            background: url('img/training.jpg');
+        }
+
+        .left {
+            position: absolute;
+            left: 45px;
+            top: 20px;
+            display: inline-block;
+            /* border: 4px solid red; */
+        }
+
+        .left img {
+            width: 120px;
+            filter: invert(100%);
+            /*change color of image from black to white and vice-versa*/
+        }
+
+        .left div {
+            font-size: 20px;
+            line-height: 15px;
+            color: antiquewhite;
+            text-align: center;
+        }
+
+        .mid {
+            /* for doing centre we require display, width, margin  */
+            display: block;
+            width: 45%;
+            margin: 20px auto;
+            /* border: 4px solid royalblue; */
+        }
+
+        .right {
+            position: absolute;
+            right: 35px;
+            top: 20px;
+            display: inline-block;
+            /* border: 4px solid green; */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: whitesmoke;
+            text-decoration: none;
+            /*used to remove underline from text*/
+            padding: 25px 15px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            /*used to add underline*/
+            color: lightcoral;
+        }
+
+        .btn {
+            font-family: 'Baloo Bhaina 2', cursive;
+            margin: 0px 9px;
+            padding: 4px 14px;
+            /* background-color: white;
+            color: black; */
+            /* border: 2px solod red; */
+            border-radius: 10px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: gainsboro;
+        }
+
+        .container {
+            border: 2px solid pink;
+            color: whitesmoke;
+            margin: 100px 80px;
+            padding: 75px;
+            width: 35%;
+            border-radius: 28px;
+        }
+
+        .form-group input {
+            font-family: 'Baloo Bhaina 2', cursive;
+            text-align: center;
+            display: block;
+            width: 500px;
+            padding: 5px;
+            margin: 11px auto;
+            /* border: 2px solid tomato; */
+            font-size: 20px;
+            border-radius: 15px;
+        }
+
+        .container h1{
+            text-align: center;
+        }
+
+        .container button{
+            display: block;
+            width: 96%;
+            margin:20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box- for logo -->
+        <div class="left">
+            <img src="img/barbel.png" alt="">
+            <div>Anubhav Fitness</div>
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="about.html" target="_blank">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="contact.html" target="_blank">Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for buttons-->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Unnao now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your phone number">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your email id">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
